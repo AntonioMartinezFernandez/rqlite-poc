@@ -1,0 +1,5 @@
+module github.com/AntonioMartinezFernandez/rqlite-poc
+
+go 1.22.4
+
+require github.com/rqlite/gorqlite v0.0.0-20240227123050-397b03f02418
