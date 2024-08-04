@@ -1,0 +1,14 @@
+services:
+  rqlite:
+    image: rqlite/rqlite:8.26.7
+    container_name: rqlite
+    ports:
+      - 4001:4001
+    volumes:
+      - ./data/rqlite:/rqlite/file/data
+    restart: always
+    logging:
+      driver: 'json-file'
+      options:
+        max-file: '10'
+        max-size: 20m
